@@ -11,6 +11,7 @@
     "video:section5": "ffmpeg -y -i \"new video section 5.mov\" -vf scale=540:-2 -an -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p -profile:v high -movflags +faststart public/videos/section5-motion.mp4"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.469.0",
     "react": "^18.3.1",
