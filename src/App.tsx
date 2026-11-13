@@ -1,4 +1,5 @@
 import { useScroll, useTransform } from 'framer-motion'
+import { Analytics } from '@vercel/analytics/react'
 import HeroIntroStage from './components/HeroIntroStage'
 import MomentsSection from './components/MomentsSection'
 import ReelSection from './components/ReelSection'
@@ -32,6 +33,7 @@ export default function App() {
           <FinaleSection />
           <ButterflyStream />
         </main>
+        <Analytics />
       </JourneyProvider>
     </PointerParallaxProvider>
   )
